@@ -1,17 +1,17 @@
 import React from 'react'
 
-const TodoList = ({todos})=>{
-  
+const TodoList = ({todos,handleDelete})=>{
+
   const todoList = todos.length ? (
-    todos.map( todo=>
+    todos.map(todo=>
        (
-         <div class="collection-item" key={todo.id}>
-           <span>{todo.content}</span>
+         <div onClick = {()=>handleDelete(todo.id)} className="collection-item" key={todo.id}>
+          <span>{todo.content}</span>
          </div>
        )  
     )
   ):(
-    <p className='center'>You Have no todo left</p>
+    <p className='center'>You Have no todo's left</p>
   )
   return todoList;
 }

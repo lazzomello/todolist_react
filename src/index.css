@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.collection-item:hover{
+  cursor:pointer;
+  background-color: skyblue;
+}
+
+.app-form{
+  display:flex;
+  justify-content:space-between;
+}
+button {
+  margin-left: 20px;
+}
+
+
