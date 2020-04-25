@@ -18,10 +18,7 @@ class App extends Component {
     })
     
   }
-  handleAdd = (e)=>{
-    
-    
-  }
+   
   
   render(){
     return (
